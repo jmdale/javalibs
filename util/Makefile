@@ -9,7 +9,7 @@ all: $(JAVA_CLASSES)
 #	$(MAKE) -C combx
 #	$(MAKE) -C fn
 #	$(MAKE) -C graph
-#	$(MAKE) -C str
+	$(MAKE) -C str
 
 %.class : %.java
 	$(JAVAC) $<
@@ -20,4 +20,4 @@ clean:
 #	$(MAKE) -C combx clean
 #	$(MAKE) -C fn clean
 #	$(MAKE) -C graph clean
-#	$(MAKE) -C str clean
+	$(MAKE) -C str clean
