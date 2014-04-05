@@ -7,7 +7,7 @@ JAVA_CLASSES = $(JAVA_SOURCES:.java=.class)
 all: $(JAVA_CLASSES)
 #	$(MAKE) -C bool
 #	$(MAKE) -C combx
-#	$(MAKE) -C fn
+	$(MAKE) -C fn
 #	$(MAKE) -C graph
 	$(MAKE) -C str
 
@@ -18,6 +18,6 @@ clean:
 	rm -vf *.class *~
 #	$(MAKE) -C bool clean
 #	$(MAKE) -C combx clean
-#	$(MAKE) -C fn clean
+	$(MAKE) -C fn clean
 #	$(MAKE) -C graph clean
 	$(MAKE) -C str clean
