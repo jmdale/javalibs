@@ -5,7 +5,7 @@ package util;
  * System.out in reverse order.
  *
  * @author <a href="mailto:jmdale@gmail.com">Joseph Dale</a>
- * @version 20130805
+ * @version 20140531
  */
 public class ReverseLines {
 
@@ -19,7 +19,7 @@ public class ReverseLines {
 	}
 
 	try {
-	    String[] lines = (String[]) IOUtils.readStrings(args[0]).toArray(new String[0]);
+	    String[] lines = IOUtils.readStrings(args[0]).toArray(new String[0]);
 	    for (int i = lines.length - 1; i >= 0; --i) {
 		System.out.println(lines[i]);
 	    }

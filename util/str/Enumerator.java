@@ -11,7 +11,7 @@ import java.util.Set;
  * (within a given range of lengths).
  *
  * @author <a href="mailto:jmdale@gmail.com">Joseph Dale</a>
- * @version 20140317
+ * @version 20140531
  */
 public class Enumerator {
 
@@ -54,7 +54,7 @@ public class Enumerator {
 	    LinkedList<String> strings = new LinkedList<String>();
 	    enumerateInner(strings, new char[n], 0, n);
 
-	    return (String[]) strings.toArray(new String[strings.size()]);
+	    return strings.toArray(new String[strings.size()]);
 	}
     }
 
