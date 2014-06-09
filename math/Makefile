@@ -15,7 +15,7 @@ endif
 endif
 
 all: $(JAVA_CLASSES) $(JNI_LIB)
-#	$(MAKE) -C min
+	$(MAKE) -C min
 #	$(MAKE) -C root
 
 # Pattern rule to compile Java files.
@@ -52,5 +52,5 @@ libjnimath.jnilib: math_JNIMath.o
 # Remove class files and emacs backup files.
 clean: 
 	rm -vf *.class *~ math_JNIMath.h math_JNIMath.o libjnimath.so ../lib/libjnimath.so libjnimath.jnilib ../lib/libjnimath.jnilib
-#	$(MAKE) -C min clean
+	$(MAKE) -C min clean
 #	$(MAKE) -C root clean
